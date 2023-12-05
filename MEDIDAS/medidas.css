@@ -1,0 +1,43 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+/********************************************************************/
+body {
+    font-size: 10px;
+}
+/********************************************************************/
+section#primeira {
+    background-color: aqua;
+}
+/********************************************************************/
+.primeiro_bloco{
+    font-size: 0.5em;
+    background-color: sandybrown;
+}
+
+.segundo_bloco{
+    font-size: 0.75em;
+    background-color: red;
+}
+
+.terceiro_bloco{
+    font-size: 1em;
+    background-color: rebeccapurple;
+}
+
+.quarto_bloco{
+    font-size: 1.25em;
+    background-color: aqua;
+}
+
+.quinto_bloco{
+    font-size: 1.50em;
+    background-color: green;
+}
+
+.sexto_bloco{
+    font-size: 1.75em;
+    background-color: yellow;
+}

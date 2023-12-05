@@ -1,0 +1,70 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #9296d5;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.6em;
+}
+
+section#showcase {
+    height: 100vh;
+    background-image: url(recife.jpg);
+    background-size: cover;
+    background-position: right 30% bottom;
+
+    color: rgb(180, 237, 11);
+    text-align: center;
+    padding-top: 2em;
+}
+
+section#showcase h1{
+    text-shadow: 0 1px 0 rgb(255, 0, 242);
+    letter-spacing: 0.1em;
+}
+
+section#showcase p {
+    color: #fff;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 1)
+                 0 -1px 1px #000;
+    font-weight: 500;
+    padding-top: 2em;
+    padding-left: 8em;
+    padding-right: 8em;
+    margin-bottom: 1.5em;
+}
+
+section#showcase a.btn {
+    padding-block-end: .5em;
+    padding-bottom: .5em;
+    padding-left: 1em;
+    padding-right: 1em;
+    text-decoration: none;
+    background-color: #74f1cc;
+    color: rgb(255, 255, 255);
+
+    border-radius: 0.4em;
+    transition: .3s;
+}
+
+section#showcase a.btn:hover{
+    border: 2px solid #20cce0;
+    background-color: transparent;
+    outline: 2px white; /* Linha depois da borda*/
+    outline-offset: 4px; /*Distancia da linha depois da borda*/
+}
+
+secttion.container p {
+    padding: 3em;
+    line-height: 1.5em;
+    text-align: 600;
+}
+
+footer {
+    height: 8vh;
+    text-align: right;
+    padding-right: 2.5em;
+}
