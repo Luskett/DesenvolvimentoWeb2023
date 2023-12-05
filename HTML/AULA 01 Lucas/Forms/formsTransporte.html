@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <header>
+        <h1>Formulário de Transporte</h1>
+    </header>
+
+    <article>
+        <form action="mailto:lucasandrey@gmail.com" method="post" oninput="resultado.value = parseInt(valor01.value) + parseInt(valor02.value)">
+            <fieldset>
+                <legend><strong>Identificação:</strong></legend>
+                <label for="cNome">Nome:</label> 
+                <input type="text" name="nome" id="cNome" size="50" required placeholder="Digite seu Nome">
+                <br><br>
+<!---------------------------------------------------------------------------------------------->
+                <label for="email">e-Mail:</label>
+                <input type="email" name="email" id="e-Mail" size="50" placeholder="Exemplo@exemplo.com">
+                <br> <br>
+<!---------------------------------------------------------------------------------------------->
+                <p>Voce mora:</p>
+                <input type="radio" name="lugar" inputmode="city" value="C">
+                <label for="city">Cidade</label>
+                <br>
+<!---------------------------------------------------------------------------------------------->
+                <input type="radio" name="downtown" inputmode="downtown" value="D">
+                <label for="downtown">Interior</label>
+            </fieldset> <br>
+<!---------------------------------------------------------------------------------------------->
+            <fieldset>
+                <legend><strong>Informações extras:</strong></legend>
+                    <p>Qual meio de transporte você usa?</p> 
+                    <input type="checkbox" id="transporte1" name="Bike" value="Bike" /> 
+                    <label for="Bike"> Bicicleta</label>
+                    <br>    
+                    <input type="checkbox" id="transporte2" name="Car" value="Car" /> 
+                    <label for="Car"> Carro</label>
+                    <br>
+                    <input type="checkbox" id="Metro" name="transporte3" value="Metro" /> 
+                    <label for="Metro"> Metrô</label>
+                    <br>
+                    <input type="checkbox" id="Bus" name="transporte4" value="Bus" /> 
+                    <label for="Bus"> Ônibus</label>
+                    <br><br>
+<!--------------------------------------------------------------------------------------------->
+                    <!--Select cria uma lista de opções-->
+                    <label for="game">Escolha seu tipo de jogo: &nbsp;</label>
+                    <select name="game" id="game">
+                        <!--option é as opções da lista-->
+                        <!--value são os valores da escolha-->
+                        <option value="fps">FPS</option>
+                        <option value="adv">Adventure</option>
+                        <option value="rpg">RPG</option>
+                        <option value="moba">M.O.B.A</option>
+                        <option value="sport">Sport's</option>
+                        <option value="puzzle">Puzzle</option>
+                    </select>
+                    <br><br>
+<!---------------------------------------------------------------------------------------------->
+                    <!--aqui inicia o datalit ou lista de dados-->
+                    <label for="regiao">Escolha sua cidade</label>
+                    <input list="cidade" name="city2" inputmode="regiao" placeholder="Digite sua cidade" autocomplete="on">
+                    <datalist id="cidade">
+                        <option value="Recife"></option>
+                        <option value="Olinda"></option>
+                        <option value="Cabo"></option>
+                        <option value="Paulista"></option>
+                        <option value="Moreno"></option>
+                        <option value="Camaragibe"></option>
+                        <option value="Jaboatão dos Guararapes"></option>
+                        <option value="Cabrobó"></option>
+                    </datalist>
+                    <br><br>
+            </fieldset>
+<!---------------------------------------------------------------------------------------------->
+                    <br>
+            <fieldset>
+            <legend><strong>Exemplo range e output:</strong></legend>
+                    <label for="valor01">O quanto voce curtiu o formulário:</label>
+                    <br>
+                    0<input type="range" id="valor01" name="valor01">100 +
+                    <input type="number" name="valor02" id="valor02" value="0">
+                    <output name="resultado" id="resutado" ></output>
+
+                    <input type="number" name="valor02" id="valor02"  value="10">
+                    =
+                    <output name="resultado" id="resultado"></output>
+                    <br>
+            </fieldset>
+                    <br>
+           <fieldset>
+            <legend><strong>Sua opnião:</strong></legend>
+                    <p>Sugerstões, elogios e críticas</p>
+                    <textarea name="msg" cols="50" rows="10" placeholder="Digite sua crítica" required></textarea>
+                    <input type="submit" value="Enviar">
+        </fieldset>
+        </form>
+    </article>
+    <br><br><br><hr>
+<!------------------------------------------------------------------------------------------->
+    <footer>
+        <small style="color: rgb(255, 0, 0);">by Lucas Andrey &copy;</small>
+    </footer>
+
+</body>
+</html>
